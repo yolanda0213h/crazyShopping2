@@ -248,7 +248,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="18"/>
-                                <state key="normal" title="Buy Now">
+                                <state key="normal" title="Cleared">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
@@ -256,6 +256,9 @@
                                         <integer key="value" value="10"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="cleared:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IdX-z6-adY"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.75575031725888331" green="0.32808079375153598" blue="0.1397884236636909" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

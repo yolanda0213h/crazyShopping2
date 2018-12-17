@@ -83,6 +83,25 @@ class ViewController: UIViewController {
         
     }
     
-
+    @IBAction func cleared(_ sender: UIButton) {
+        stepper01.value = 0
+        stepper02.value = 0
+        stepper03.value = 0
+        stepper04.value = 0
+        item1 = Int(stepper01.value)
+        item2 = Int(stepper02.value)
+        item3 = Int(stepper03.value)
+        item4 = Int(stepper04.value)
+        label01.text = item1.description
+        label02.text = item2.description
+        label03.text = item3.description
+        label04.text = item4.description
+        var total:Int = 0
+        total = item1 * realprice01 + item2 * realprice02 + item3 * realprice03 + item4 * realprice04
+        format.maximumFractionDigits = 0
+        format.numberStyle = .currency
+        totalPrice.text = format.string(from: NSNumber(value: total))
+    }
+    
 }
 
